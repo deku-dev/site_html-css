@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 22px;
+}
+
+body {
+  --color-block-content: rgb(161, 161, 161);
+  --color-other-block: rgb(43, 43, 43);
+  --color-font-white: white;
+  --color-font-black: black;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 980px;
+  padding: 0 10px;
+  background-color: rgb(214, 214, 214);
+}
+hr {
+  margin: 10px 0;
+}
+.header_block {
+  background-color: var(--color-other-block);
+}
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+}
+.logo {
+  flex-grow: 1;
+}
+.contact {
+  margin: 0 15px;
+  flex-grow: 2.5;
+}
+.more {
+  flex-grow: 4;
+  padding: 25px;
+  color: var(--color-font-white);
+  text-align: right;
+}
+
+.main {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.sidebar {
+  margin: 0 15px 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  width: 22%;
+}
+.sidebar-bottom {
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-other-block);
+}
+.sidebar-list {
+  background-color: var(--color-other-block);
+  color: var(--color-font-white);
+  padding: 10px;
+}
+dt {
+  font-weight: bold;
+}
+.sidebar-item {
+  padding: 2px;
+}
+.content {
+  width: 78%;
+}
+.section-top {
+  background-color: var(--color-block-content);
+  padding: 15px;
+}
+.section-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-gap: 15px;
+  margin: 15px 0;
+}
+.article_main {
+  background-color: var(--color-block-content);
+}
+.list-spec {
+  margin: 20px 40px;
+}
+.section-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.section-bottom_article {
+  padding: 15px;
+  background-color: var(--color-block-content);
+}
+.footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-block {
+  padding: 30px;
+  color: var(--color-font-white);
+  grid-row: 1/3;
+  background-color: var(--color-other-block);
+}
+.footer-num_list {
+  column-count: 2;
+}
+.num-list_item {
+  width: 50%;
+}
+.copyright {
+  grid-row: 1/2;
+  background-color: var(--color-other-block);
+}
+.contact-block {
+  background-color: var(--color-other-block);
+  grid-row: 2/3;
+}
