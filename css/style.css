@@ -12,6 +12,7 @@ body {
   --color-font-black: black;
   display: flex;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container {
   width: 980px;
@@ -19,7 +20,10 @@ body {
   background-color: rgb(214, 214, 214);
 }
 hr {
-  margin: 10px 0;
+  margin: 15px 0;
+  border: none;
+  height: 1px;
+  background-color: var(--color-font-black);
 }
 .header_block {
   background-color: var(--color-other-block);
@@ -112,9 +116,13 @@ dt {
 }
 .footer-num_list {
   column-count: 2;
+  list-style: none;
 }
 .num-list_item {
   width: 50%;
+}
+.marker-list {
+  list-style-type: square;
 }
 .copyright {
   grid-row: 1/2;
