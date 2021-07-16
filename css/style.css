@@ -25,6 +25,9 @@ hr {
   height: 1px;
   background-color: var(--color-font-black);
 }
+a {
+  color: var(--color-font-white);
+}
 .header_block {
   background-color: var(--color-other-block);
 }
